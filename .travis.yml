@@ -17,7 +17,7 @@ deploy:
   script:
     kubectl apply -f deployment.yml
   on:
-    branch: master
+    branch: main
 
 
 
