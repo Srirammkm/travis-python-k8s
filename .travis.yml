@@ -11,8 +11,4 @@ before_install:
   - chmod +x packages.sh
   - chmod +x deploy.sh
 install: ./packages.sh
-deploy:
-  provider: script
-  script: ./deploy.sh
-  on:
-   branch: master
+
