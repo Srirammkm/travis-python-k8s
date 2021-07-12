@@ -12,6 +12,9 @@ before_install:
   - chmod +x deploy.sh
 install: ./packages.sh
 
+after_success:
+  - echo "deployment started"
+
 deploy:
   provider: script
   script: deploy.sh
