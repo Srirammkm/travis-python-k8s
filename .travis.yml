@@ -12,7 +12,6 @@ before_install:
 install: ./packages.sh
 deploy:
   provider: script
-  script: 
-    - kubectl apply -f deployment.yml
+  script: bash ./deploy.sh
   on:
    branch: master
