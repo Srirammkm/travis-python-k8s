@@ -27,3 +27,5 @@ echo "-------------------------"
 echo "-------------------------"
 echo "updating kubeconfig file"
 aws eks update-kubeconfig --name $CLUSTER_NAME
+  
+kubectl apply -f deployment.yml
