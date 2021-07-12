@@ -7,6 +7,8 @@ os:
   - linux
 services:
   - docker
+before_install:
+  - chmod +x packages.sh
 install: ./packages.sh
 deploy:
   provider: script
