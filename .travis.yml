@@ -14,7 +14,7 @@ install: ./packages.sh
 
 deploy:
   provider: script
-  script: depxxloy.sh
+  script: deploy.sh
   on:
     branch: main
 
