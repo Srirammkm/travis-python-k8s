@@ -14,9 +14,10 @@ install: ./packages.sh
 
 deploy:
   provider: script
-  script: sh ./deploy.sh
-  on:
-   branch: master
+  script:
+    kubectl apply -f deployment.yml
+    on:
+     branch: master
 
 
 
