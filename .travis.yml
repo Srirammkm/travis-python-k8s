@@ -1,0 +1,15 @@
+sudo: required
+language: python
+python:
+  - 3.9
+os:
+  - linux
+services:
+  - docker
+install: ./packages.sh
+deploy:
+  provider: script
+  script: 
+    - kubectl apply -f deployment.yml
+  on:
+   branch: master
