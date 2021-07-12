@@ -16,8 +16,8 @@ deploy:
   provider: script
   script:
     kubectl apply -f deployment.yml
-    on:
-     branch: master
+  on:
+    branch: master
 
 
 
